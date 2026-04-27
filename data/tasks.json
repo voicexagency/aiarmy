@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Build landing page",
+    "description": "Design and develop a modern animated landing page.",
+    "agent": "Designer",
+    "agentColor": "#3b82f6",
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2026-04-26T12:00:00Z"
+  },
+  {
+    "id": "2",
+    "title": "Write LinkedIn post about AI agents",
+    "description": "Draft a LinkedIn post explaining how our agents automate marketing.",
+    "agent": "LeadGen",
+    "agentColor": "#6366f1",
+    "priority": "medium",
+    "status": "review",
+    "createdAt": "2026-04-26T12:01:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Research AI tool trends this week",
+    "description": "Analyze top trending AI tools and prepare weekly summary.",
+    "agent": "LeadGen",
+    "agentColor": "#6366f1",
+    "priority": "low",
+    "status": "completed",
+    "createdAt": "2026-04-26T12:02:00Z"
+  }
+]

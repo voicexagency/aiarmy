@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "clientName": "TechStart Co",
+    "dealValue": 15000,
+    "status": "active",
+    "dealType": "Social Media Campaign",
+    "startDate": "2026-04-20",
+    "endDate": "2026-06-20",
+    "paymentStatus": "paid",
+    "assignedAgent": "SMM",
+    "progress": 65
+  },
+  {
+    "id": "2",
+    "clientName": "E-Commerce Plus",
+    "dealValue": 25000,
+    "status": "active",
+    "dealType": "Google Ads Campaign",
+    "startDate": "2026-04-15",
+    "endDate": "2026-07-15",
+    "paymentStatus": "pending",
+    "assignedAgent": "GoogleADS",
+    "progress": 40
+  },
+  {
+    "id": "3",
+    "clientName": "Local Services Hub",
+    "dealValue": 8000,
+    "status": "completed",
+    "dealType": "Landing Page Design",
+    "startDate": "2026-03-01",
+    "endDate": "2026-04-10",
+    "paymentStatus": "paid",
+    "assignedAgent": "Designer",
+    "progress": 100
+  },
+  {
+    "id": "4",
+    "clientName": "SaaS Startup",
+    "dealValue": 35000,
+    "status": "active",
+    "dealType": "Full Marketing Stack",
+    "startDate": "2026-04-01",
+    "endDate": "2026-09-01",
+    "paymentStatus": "partially_paid",
+    "assignedAgent": "MegaManager",
+    "progress": 35
+  },
+  {
+    "id": "5",
+    "clientName": "Fitness Brand",
+    "dealValue": 12000,
+    "status": "pending",
+    "dealType": "Instagram Reels Campaign",
+    "startDate": "2026-05-01",
+    "endDate": "2026-07-01",
+    "paymentStatus": "pending",
+    "assignedAgent": "SMM",
+    "progress": 0
+  }
+]
