@@ -146,8 +146,12 @@ function MinecraftAgent({ agent, position, destination }: { agent: Agent; positi
         <meshStandardMaterial color="#1a1a1a" />
       </mesh>
 
-      {/* Name Tag */}
-      <Text position={[0, 2.1, 0]} fontSize={0.3} color="white" anchorY="bottom">
+      {/* Name Tag - Better visibility with dark background */}
+      <mesh position={[0, 2.1, 0.1]}>
+        <planeGeometry args={[1.2, 0.4]} />
+        <meshStandardMaterial color="#000000" emissive="#1a1a1a" />
+      </mesh>
+      <Text position={[0, 2.1, 0.15]} fontSize={0.25} color="#8b5cf6" anchorY="middle" anchorX="center">
         {agent.name}
       </Text>
     </group>
@@ -277,35 +281,35 @@ function Office() {
         <meshStandardMaterial color="#F5F0E8" />
       </mesh>
 
-      {/* Walls */}
-      <mesh position={[0, 5, -10]}>
-        <boxGeometry args={[24, 10, 0.2]} />
+      {/* Walls - Reduced height */}
+      <mesh position={[0, 3, -10]}>
+        <boxGeometry args={[24, 6, 0.2]} />
         <meshStandardMaterial color="#EEEADF" />
       </mesh>
-      <mesh position={[0, 5, 10]}>
-        <boxGeometry args={[24, 10, 0.2]} />
+      <mesh position={[0, 3, 10]}>
+        <boxGeometry args={[24, 6, 0.2]} />
         <meshStandardMaterial color="#EEEADF" />
       </mesh>
-      <mesh position={[-12, 5, 0]}>
-        <boxGeometry args={[0.2, 10, 20]} />
+      <mesh position={[-12, 3, 0]}>
+        <boxGeometry args={[0.2, 6, 20]} />
         <meshStandardMaterial color="#EEEADF" />
       </mesh>
-      <mesh position={[12, 5, 0]}>
-        <boxGeometry args={[0.2, 10, 20]} />
+      <mesh position={[12, 3, 0]}>
+        <boxGeometry args={[0.2, 6, 20]} />
         <meshStandardMaterial color="#EEEADF" />
       </mesh>
 
       {/* Logos on walls - Back wall (left side) */}
-      <LogoPlane position={[-4, 5, -9.9]} rotation={new THREE.Euler(0, 0, 0)} />
+      <LogoPlane position={[-4, 3.5, -9.9]} rotation={new THREE.Euler(0, 0, 0)} />
 
       {/* Logos on walls - Back wall (right side) */}
-      <LogoPlane position={[4, 5, -9.9]} rotation={new THREE.Euler(0, 0, 0)} />
+      <LogoPlane position={[4, 3.5, -9.9]} rotation={new THREE.Euler(0, 0, 0)} />
 
       {/* Logo on left wall */}
-      <LogoPlane position={[-11.9, 5, -4]} rotation={new THREE.Euler(0, Math.PI / 2, 0)} />
+      <LogoPlane position={[-11.9, 3.5, -4]} rotation={new THREE.Euler(0, Math.PI / 2, 0)} />
 
       {/* Logo on right wall */}
-      <LogoPlane position={[11.9, 5, 4]} rotation={new THREE.Euler(0, -Math.PI / 2, 0)} />
+      <LogoPlane position={[11.9, 3.5, 4]} rotation={new THREE.Euler(0, -Math.PI / 2, 0)} />
 
       {/* Meeting Room - Center */}
       <mesh position={[0, 0.05, 0]}>
